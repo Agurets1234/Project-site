@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Памятка по кибербезопасности — Угрозы в интернете и защита</title>
+  <meta name="description" content="Короткая памятка: основные угрозы в интернете и как не попасться." />
+
+  <style>
+    :root{
+      --bg1:#05070d;
+      --bg2:#0b1220;
+      --line: rgba(255,255,255,0.12);
+      --text: rgba(255,255,255,0.92);
+      --muted: rgba(255,255,255,0.72);
+      --radius: 18px;
+      --max: 980px;
+      --shadow: 0 14px 45px rgba(0,0,0,0.35);
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    *{
+      box-sizing:border-box; 
+    }
+    html, body{
+      height:100%; 
+    }
+    body{
+
+      margin:0;
+      font-family: var(--sans);
+      color: var(--text);
+
+      background:
+        radial-gradient(900px 600px at 20% 10%, rgba(125,211,252,0.14), transparent 60%),
+        radial-gradient(900px 700px at 85% 20%, rgba(167,139,250,0.12), transparent 58%),
+        linear-gradient(180deg, var(--bg1) 0%, var(--bg2) 55%, var(--bg1) 100%);
+      background-attachment: fixed;
+    }
+
+    .wrap{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 22px 16px 54px;
+    }
+
+    header{
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.05);
+      border-radius: 22px;
+      padding: 18px 16px;
+      box-shadow: var(--shadow);
+    }
+
+    .title{
+      display:flex;
+      gap: 12px;
+      align-items:flex-start;
+      flex-wrap: nowrap;
+    }
+
+    .logo{
+      width:42px; height:42px;
+      border-radius: 14px;
+      display:grid;
+      place-items:center;
+      font-family: var(--mono);
+      font-weight: 900;
+      color:#071022;
+      background: linear-gradient(135deg, rgba(125,211,252,0.95), rgba(167,139,250,0.9));
+      flex: 0 0 auto;
+    }
+
+    h1{
+      margin:0;
+      font-size: 21px;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+    .subtitle{
+      margin:6px 0 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    main{
+      margin-top: 14px;
+      display:grid;
+      gap: 12px;
+    }
+
+    section{
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.04);
+      border-radius: var(--radius);
+      padding: 14px 14px 10px;
+      box-shadow: var(--shadow);
+    }
+
+    h2{
+      margin: 0 0 10px;
+      font-size: 19px;
+      letter-spacing: -0.01em;
+    }
+
+    ul{
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    li{
+      margin: 8px 0; 
+    }
+
+    .rule{
+      margin-top: 10px;
+      padding: 8px 10px;
+      background: #0b1220;
+      border-left: 3px solid #7dd3fc;
+      border-radius: 10px;
+      color: #cbd5e1;
+      font-size: 13px;
+    }
+      
+    img {
+      max-width: 800px;
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="title">
+        <div class="logo">SEC</div>
+        <div>
+          <h1>Памятка по кибербезопасности</h1>
+          <div class="subtitle">
+            Тема: «Угрозы в сети интернет и защита от них». Коротко и по делу — как не попасться.
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>Запомни !</h2>
+        <ul>
+          <li><b>Большинство атак — это обман.</b> Мошенники заставляют вас самим(ой) нажать ссылку, установить программу или сообщить код.</li>
+          <li><b>Главное правило:</b> если торопят, пугают, обещают «приз» — остановитесь и проверьте.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Основные источники угроз (Каналы атак)</h2>
+        <ul>
+          <li><b>Почта:</b> не открывайте неожиданные вложения; не включайте макросы; проверяйте адрес отправителя.</li>
+          <li><b>Мессенджеры/соцсети:</b> «друг» прислал ссылку — уточните у него другим способом (звонок/голосовое).</li>
+          <li><b>Звонки/SMS:</b> не сообщайте коды из SMS и данные карты; перезванивайте по официальному номеру.</li>
+          <li><b>Сайты/реклама:</b> переходите на важные сервисы только через закладки/вручную набранный адрес.</li>
+          <li><b>Публичный Wi-Fi:</b> не заходите в банк/госуслуги; лучше мобильный интернет или VPN.</li>
+        </ul>
+        <div class="rule"><b>Стоп перед кликом:</b> кому выгодно, чтобы вы «срочно» что-то сделали?</div>
+      </section>
+
+      <section>
+        <h2>Фишинг и поддельные ресурсы</h2>
+        <img src="img/Fishing.webp" alt="">
+        <ul>
+          <li><b>Проверяйте домен:</b> одна лишняя буква, другая зона (.ru → .net), лишние слова (…-online…).</li>
+          <li><b>Признаки фишинга:</b> срочность/угрозы, «Уважаемый клиент», ошибки, просьба ввести пароль/код/данные карты.</li>
+          <li><b>Правильное действие:</b> откройте сервис через официальное приложение или вручную введённый адрес, а не по ссылке из письма.</li>
+          <li><b>Если уже ввели пароль:</b> срочно смените его на настоящем сайте и включите 2FA.</li>
+          <li><b>Если ввели данные карты:</b> сразу свяжитесь с банком по официальному номеру и заблокируйте операции.</li>
+        </ul>
+        <div class="rule"><b>Никто «официальный»</b> не просит пароль и коды подтверждения в письме/чате.</div>
+      </section>
+
+      <section>
+        <h2>Социальная инженерия (манипуляции)</h2>
+        <img src="img/Soc_eng.webp" alt="">
+        <ul>
+          <li><b>Пауза 30 секунд:</b> срочность — главный инструмент мошенника.</li>
+          <li><b>Никогда</b> не сообщайте коды из SMS, пароли, CVV/CVC, «секретные слова».</li>
+          <li><b>Не устанавливайте</b> программы удалённого доступа по просьбе «техподдержки».</li>
+          <li><b>Перезвоните сами</b> по официальному номеру (с карты/сайта), а не по номеру из звонка.</li>
+          <li><b>Договоритесь о проверке:</b> в семье/с друзьями — контрольный вопрос или фраза.</li>
+        </ul>
+        <div class="rule">Фраза-щит: «Я перезвоню по официальному номеру и уточню информацию».</div>
+      </section>
+
+      <section>
+        <h2>Вредоносное ПО (вирусы, трояны, шпионы, вымогатели)</h2>
+        <img src="img/Ransomware.webp" alt="">
+        <ul>
+          <li><b>Обновления:</b> регулярно обновляйте систему и приложения.</li>
+          <li><b>Источники:</b> скачивайте программы только с официальных сайтов/магазинов.</li>
+          <li><b>Вложения и файлы:</b> не запускайте неизвестные файлы и «кряки».</li>
+          <li><b>Защита:</b> держите антивирус/защитник включённым.</li>
+          <li><b>Backup:</b> делайте резервные копии важных файлов (облако/внешний носитель).</li>
+        </ul>
+        <div class="rule"><b>От вымогателей лучше всего спасают резервные копии.</b></div>
+      </section>
+
+      <section>
+        <h2>Дипфейки и подделка голоса/видео</h2>
+        <img src="img/Deepfake.webp" alt="">
+        <ul>
+          <li><b>Не верьте «шок-контенту» сразу:</b> перепроверьте в нескольких источниках.</li>
+          <li><b>Если просят деньги/коды:</b> прервите разговор и перезвоните по известному номеру.</li>
+          <li><b>Сигналы подделки:</b> странные артефакты лица, неестественный звук/паузы, несовпадение губ и речи.</li>
+          <li><b>Правило:</b> важные решения — только после подтверждения через другой канал связи.</li>
+        </ul>
+        <div class="rule">Если «голос знакомого» просит перевести деньги — сначала проверка (вопрос/перезвон).</div>
+      </section>
+
+      <section>
+        <h2>5 привычек цифровой безопасности</h2>
+        <ul>
+          <li>Не спешить (пауза перед кликом/переводом).</li>
+          <li>Проверять адреса сайтов и отправителей.</li>
+          <li>Не сообщать коды/пароли/данные карты.</li>
+          <li>Обновлять устройства и приложения.</li>
+          <li>Делать резервные копии важных файлов.</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</body>
