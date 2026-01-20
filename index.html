@@ -11,7 +11,7 @@
       --bg1:#05070d;
       --bg2:#0b1220;
       --line: rgba(255,255,255,0.12);
-      --text: rgba(255,255,255,0.92);
+      --text: rgba(255,255,255,0.92); 
       --muted: rgba(255,255,255,0.72);
       --radius: 18px;
       --max: 980px;
@@ -117,12 +117,26 @@
 
     .rule{
       margin-top: 10px;
+      margin-left: 26px;
       padding: 8px 10px;
       background: #0b1220;
       border-left: 3px solid #7dd3fc;
       border-radius: 10px;
       color: #cbd5e1;
       font-size: 13px;
+    
+      position: relative;
+    }
+    
+    .rule::before{
+      content: "❗";
+      position: absolute;
+      left: -30px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: red;
+      font-size: 22px;
+      font-weight: 900;
     }
       
     img {
@@ -173,7 +187,7 @@
 
       <section>
         <h2>Фишинг и поддельные ресурсы</h2>
-        <img src="img/Fishing.webp" alt="">
+        <img src="img/Fishing.webp" alt="" loading="lazy">
         <ul>
           <li><b>Проверяйте домен:</b> одна лишняя буква, другая зона (.ru → .net), лишние слова (…-online…).</li>
           <li><b>Признаки фишинга:</b> срочность/угрозы, «Уважаемый клиент», ошибки, просьба ввести пароль/код/данные карты.</li>
@@ -186,7 +200,7 @@
 
       <section>
         <h2>Социальная инженерия (манипуляции)</h2>
-        <img src="img/Soc_eng.webp" alt="">
+        <img src="img/Soc_eng.webp" alt="" loading="lazy">
         <ul>
           <li><b>Пауза 30 секунд:</b> срочность — главный инструмент мошенника.</li>
           <li><b>Никогда</b> не сообщайте коды из SMS, пароли, CVV/CVC, «секретные слова».</li>
@@ -199,7 +213,7 @@
 
       <section>
         <h2>Вредоносное ПО (вирусы, трояны, шпионы, вымогатели)</h2>
-        <img src="img/Ransomware.webp" alt="">
+        <img src="img/Ransomware.webp" alt="" loading="lazy">
         <ul>
           <li><b>Обновления:</b> регулярно обновляйте систему и приложения.</li>
           <li><b>Источники:</b> скачивайте программы только с официальных сайтов/магазинов.</li>
@@ -212,7 +226,7 @@
 
       <section>
         <h2>Дипфейки и подделка голоса/видео</h2>
-        <img src="img/Deepfake.webp" alt="">
+        <img src="img/Deepfake.webp" alt="" loading="lazy">
         <ul>
           <li><b>Не верьте «шок-контенту» сразу:</b> перепроверьте в нескольких источниках.</li>
           <li><b>Если просят деньги/коды:</b> прервите разговор и перезвоните по известному номеру.</li>
